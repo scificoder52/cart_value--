@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart value</title>
+</head>
+<body>
+    <h1>what you want?</h1>
+    <button class="add-item" onclick="cardQuantity+=1;
+    document.querySelector('#card-summary').
+    innerText=`you have ${cardQuantity} items  in cart`">Add item</button>
+
+    <button class="remove-item" onclick="cardQuantity-=1;
+    document.querySelector('#card-summary').
+    innerText=`you have ${cardQuantity} items  in cart`">Remove item</button>
+    <h3 id="card-summary"></h3>
+
+    <script>  
+    let cardQuantity=5;
+    document.querySelector('#card-summary').
+    innerText=`you have ${cardQuantity} items  in cart`;
+
+    </script>
+</body>
+</html>
